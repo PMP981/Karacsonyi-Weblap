@@ -1,0 +1,8 @@
+.main_div {
+    width: 400px;
+    height: 600px;
+    border: 2px solid rgb(0, 134, 7);
+    border-radius: 28px;
+    filter: drop-shadow(2px 2px 8px green);
+    background-color: rgb(11, 165, 11);
+}
