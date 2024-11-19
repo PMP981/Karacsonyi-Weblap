@@ -8,6 +8,6 @@
     margin: auto;
 }
 main {
-    margin-top: 20px;
     display: flex;
+    margin: 50px;
 }
