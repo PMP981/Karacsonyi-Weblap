@@ -11,3 +11,12 @@ main {
     display: flex;
     margin: 50px;
 }
+body {
+    font-size: 2em;
+    background-color: rgb(233, 247, 222);
+}
+footer {
+    height: 200px;
+    margin: auto;
+    background-color: rgb(146, 146, 146);
+}
