@@ -7,3 +7,7 @@
     background-color: rgb(11, 165, 11);
     margin: auto;
 }
+main {
+    margin-top: 20px;
+    display: flex;
+}
