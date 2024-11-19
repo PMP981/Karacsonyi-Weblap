@@ -3,7 +3,7 @@
     height: 600px;
     border: 2px solid rgb(0, 134, 7);
     border-radius: 28px;
-    filter: drop-shadow(2px 2px 8px green);
+    filter: drop-shadow(4px 4px 12px green);
     background-color: rgb(11, 165, 11);
     margin: auto;
 }
