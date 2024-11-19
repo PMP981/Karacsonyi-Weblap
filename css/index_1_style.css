@@ -1,11 +1,11 @@
 .main_div {
     width: 400px;
     height: 600px;
-    border: 2px solid rgb(0, 134, 7);
+    border: 2px solid rgb(2, 112, 7);
     border-radius: 28px;
     filter: drop-shadow(4px 4px 12px green);
-    background-color: rgb(11, 165, 11);
-    margin: auto;
+    background-color: rgb(16, 170, 16);
+    margin: 20px;
 }
 main {
     display: flex;
