@@ -31,9 +31,9 @@ main{
 a{
     margin-inline: auto;
     text-decoration: none;
-    :hover{
-        transform: translateY(-10px);
-    }
+}
+a:hover {
+    transform: translateY(-10px);
 }
 h1{
     color: white;
