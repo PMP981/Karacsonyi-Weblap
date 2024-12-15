@@ -67,12 +67,14 @@ footer{
     border: 4px black solid;
 }
 aside {
-    width: 110%;
+    position: relative;
+    right: 2rem;
+    width: 100%;
     display: flex;
     gap: 1.3rem;
     grid-area: side;
     background-color: rgb(60, 82, 74);
-    height: 100%;
+    height: auto;
     margin-top: 2rem;
 }
 
