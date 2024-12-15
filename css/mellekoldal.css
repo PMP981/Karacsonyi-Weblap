@@ -2,6 +2,7 @@ body{
     font-size: 1.1rem;
     font-family: 'Times New Roman', Times, serif;
     background-color: darkseagreen;
+    margin: auto;
     p{
         text-align: center;
     }
@@ -20,6 +21,8 @@ header{
     height: 120px;
     background-color: red;
     border: 4px black solid;
+    border-bottom-right-radius: 400px;
+    border-bottom-left-radius: 400px;
 }
 main{
     margin-top: 2rem;
@@ -34,18 +37,20 @@ main{
     background-color: wheat;
     border: 4px black solid;
     border-radius: 3px;
+    border-top-left-radius: 40px;
 }
 .main_flex{
     border: 3px darkolivegreen solid;
     width: 32rem;
     height: 32rem;
+    margin: auto;
 }
 a{
     margin-inline: auto;
     text-decoration: none;
 }
 a:hover {
-    transform: translateY(-10px);
+    transform: scale(103%);
 }
 h1{
     color: white;
@@ -61,22 +66,38 @@ img{
 footer{
     margin-top: 1rem;
     display: flex;
+    flex-direction: row;
+    row-gap: 3rem;
     grid-area: footer;
     gap: 1.3rem;
     height: 70px;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(68, 68, 68);
     border: 4px black solid;
+
+    div {
+        margin: auto;
+        color: azure;
+    }
 }
 aside {
     position: relative;
     right: 13rem;
-    width: 200%;
+    width: 25rem;
     display: flex;
+    flex-direction: column;
     gap: 1.3rem;
     grid-area: side;
     background-color: rgb(223, 202, 163);
-    height: auto;
+    height: 62rem;
+    margin: auto;
     margin-top: 2rem;
+    border: 4px black solid;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    img {
+        width: 10%;
+        height: auto;
+    }
 }
 
 article {
@@ -89,4 +110,81 @@ article {
     grid-area: alul;
     background-color: rgb(231, 216, 187);
     height: 20rem;
+    border: 4px black solid;
+    border-bottom-left-radius: 40px;
+}
+
+.button-19 {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+.bg2 {
+    background-image: url(../img/header_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    border-radius: 100%;
+    width: 15rem;
+    height: 15rem;
 }
