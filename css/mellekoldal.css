@@ -82,7 +82,7 @@ footer{
 aside {
     position: relative;
     right: -8rem;
-    width: 25rem;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
@@ -94,7 +94,7 @@ aside {
     border-bottom-right-radius: 40px;
     border-top-right-radius: 40px;
     img {
-        width: 75%;
+        width: 100%;
         height: auto;
     }
 }
@@ -107,7 +107,7 @@ article {
     gap: 1.3rem;
     display: flex;
     grid-area: alul;
-    background-color: rgb(231, 216, 187);
+    background-color: rgb(223, 202, 163);
     height: 20rem;
     border: 4px black solid;
     border-bottom-left-radius: 40px;
@@ -178,12 +178,35 @@ article {
   background: none;
 }
 .bg2 {
-    background-image: url(../img/header_bg.jpg);
+    background-image: url(../img/circle-xmas-nobg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
     border-radius: 100%;
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
+    border: 0.8rem solid darkgreen;
+}
+.szoveg {
+    width: 50rem;
+    border-radius: 1rem;
+}
+.fels {
+    font-size: 1.8rem;
+    margin: auto 1rem;
+    line-height: 4.5rem;
+    text-indent: 1rem;
+    h3 {
+        font-size: 2.7rem;
+        margin: auto;
+        text-align: center;  
+        font-variant: small-caps;
+        color: rgb(223, 202, 163);
+        background-color: beige;
+        filter: drop-shadow(5px 5px 2px black);        
+    }
+    ul {
+        list-style-type: "🎄";
+    }
 }
