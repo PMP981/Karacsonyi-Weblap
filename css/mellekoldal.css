@@ -94,7 +94,7 @@ aside {
     border-bottom-right-radius: 40px;
     border-top-right-radius: 40px;
     img {
-        width: 100%;
+        width: 92%;
         height: auto;
     }
 }
@@ -115,7 +115,7 @@ article {
 
 .button-19 {
   appearance: button;
-  background-color: #1899D6;
+  background-color: rgb(133, 25, 25);
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -146,7 +146,7 @@ article {
 
 .button-19:after {
   background-clip: padding-box;
-  background-color: #1CB0F6;
+  background-color: rgb(226, 28, 28);
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -165,8 +165,8 @@ article {
 }
 
 .button-19:hover:not(:disabled) {
-  filter: brightness(1.1);
-  -webkit-filter: brightness(1.1);
+  filter: brightness(1.05);
+  -webkit-filter: brightness(1.05);
 }
 
 .button-19:disabled {
@@ -209,4 +209,16 @@ article {
     ul {
         list-style-type: "🎄";
     }
+}
+li:nth-child(odd) {
+    background-color: #ffffff44;
+    position: relative;
+    right: 1.2rem;
+    border: 2px solid black;
+    margin-bottom: 2px;
+}
+li:nth-child(even) {
+    background-color: #ffffff80;
+    border: 2px solid black;
+    margin-bottom: 2px;
 }
