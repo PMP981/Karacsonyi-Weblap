@@ -5,17 +5,29 @@ body{
     p{
         text-align: center;
     }
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main main side"
+    "main main main side"
+    "alul alul alul side"
+    "footer footer footer footer"
 }
 header{
+    display: flex;
+    grid-area: header;
     margin-inline: 0;
     height: 120px;
     background-color: red;
     border: 4px black solid;
 }
 main{
+    margin-top: 2rem;
+    width: 90%;
+    height: 40rem;
     display: flex;
+    grid-area: main;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-inline: 2vw;
     padding-inline: 30px;
@@ -46,7 +58,32 @@ img{
     height: 100%;
 }
 footer{
+    margin-top: 1rem;
+    display: flex;
+    grid-area: footer;
+    gap: 1.3rem;
     height: 70px;
     background-color: rgb(50, 50, 50);
     border: 4px black solid;
+}
+aside {
+    width: 110%;
+    display: flex;
+    gap: 1.3rem;
+    grid-area: side;
+    background-color: rgb(60, 82, 74);
+    height: 100%;
+    margin-top: 2rem;
+}
+
+article {
+    margin-top: 1.2rem;
+    margin-inline: 2vw;
+    padding-inline: 30px;
+    width: 90%;
+    gap: 1.3rem;
+    display: flex;
+    grid-area: alul;
+    background-color: aquamarine;
+    height: 20rem;
 }
