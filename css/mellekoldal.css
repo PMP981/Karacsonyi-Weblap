@@ -49,9 +49,10 @@ a:hover {
 }
 h1{
     color: white;
-    filter: drop-shadow(5px 5px 10px black);
-    font-size: 3rem;
+    filter: drop-shadow(6px 6px 6px black);
+    font-size: 4.2rem;
     text-align: center;
+    margin: auto    ;
 }
 img{
     width: 100%;
