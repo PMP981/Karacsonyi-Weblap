@@ -26,7 +26,7 @@ header{
 }
 main{
     margin-top: 2rem;
-    width: 100%;
+    width: 85%;
     height: 40rem;
     display: flex;
     grid-area: main;
@@ -103,7 +103,7 @@ article {
     margin-top: 1rem;
     margin-inline: 2vw;
     padding-inline: 30px;
-    width: 100%;
+    width: 85%;
     gap: 1.3rem;
     display: flex;
     grid-area: alul;
@@ -221,4 +221,27 @@ li:nth-child(even) {
     background-color: #ffffff80;
     border: 2px solid black;
     margin-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 1rem;
+    }
+    #message, #email, #name {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    #message, #email, #name {
+        display: block;
+    }
 }
