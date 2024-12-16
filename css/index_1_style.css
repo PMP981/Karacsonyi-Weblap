@@ -83,3 +83,59 @@ button {
     font-weight: bold;
     filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
 }
+.button_z {
+    transition: all .3s;
+    background-image: url(../img/grinch.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    p {
+        background-color: rgba(255, 255, 255, 0.24);
+    }
+}
+.button_z:hover {
+    filter: invert(10%); 
+    font-size: 36px;
+    filter: drop-shadow(4px 4px 5px white);
+    p {
+        background-color: rgba(255, 255, 255, 0.466);
+    }
+}
+
+.button_zs {
+    transition: all .3s;
+    background-image: url(../img/santa2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    p {
+        background-color: rgba(255, 255, 255, 0.24);
+    }
+}
+.button_zs:hover {
+    filter: invert(10%); 
+    font-size: 36px;
+    filter: drop-shadow(4px 4px 5px white);
+    p {
+        background-color: rgba(255, 255, 255, 0.466);
+    }
+}
+
+.button_r {
+    transition: all .3s;
+    background-image: url(../img/xmas-tree.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    p {
+        background-color: rgba(255, 255, 255, 0.24);
+    }
+}
+.button_r:hover {
+    filter: invert(10%); 
+    font-size: 36px;
+    filter: drop-shadow(4px 4px 5px white);
+    p {
+        background-color: rgba(255, 255, 255, 0.466);
+    }
+}
