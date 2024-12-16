@@ -37,10 +37,8 @@ app.post('/submit-feedback', (req, res) => {
 });
 
 
-// Serve the static files (HTML, CSS, JS) from the "public" directory
 app.use(express.static('public'));
 
-// Define a route to serve the main page (index.html)
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
