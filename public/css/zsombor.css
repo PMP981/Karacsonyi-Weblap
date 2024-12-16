@@ -59,7 +59,7 @@ footer {
     width: auto;
 }
 
-#tortenet{
+#tortenet_focim{
     text-align: center;
 }
 
@@ -123,6 +123,17 @@ textarea {
 #message, #email, #name {
     width: 90%;
     height: 25%;
+}
+
+.santa_side{
+    display: none;
+}
+
+@media (min-width: 1600px) {
+    .santa_side {
+        display: block;
+        float: left;
+    }
 }
 
 @media (max-width: 768px) {
