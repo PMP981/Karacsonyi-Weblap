@@ -3,6 +3,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     background-color: darkseagreen;
     margin: auto;
+    width: 93%;
     p{
         text-align: center;
     }
@@ -221,4 +222,17 @@ li:nth-child(even) {
     background-color: #ffffff80;
     border: 2px solid black;
     margin-bottom: 2px;
+}
+.story1 {
+    font-size: 28px;
+    text-align: justify;
+    text-indent: 10px;
+    margin: 20px;
+}
+
+.story2 {
+    text-align: justify;
+    margin: 20px 20px;
+    font-size: 28px;
+    text-indent: 6px;
 }
