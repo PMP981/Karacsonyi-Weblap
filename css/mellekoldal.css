@@ -1,23 +1,25 @@
 body{
     font-size: 1.1rem;
+    overflow-x: hidden;
+    
     font-family: 'Times New Roman', Times, serif;
     background-color: darkseagreen;
     margin: auto;
-    width: 93%;
     p{
         text-align: center;
     }
-    display: grid;
     grid-template-areas: 
-    "header header header header"
-    "main main main side"
-    "main main main side"
+    "fej fej fej fej"
+    "fo fo fo side"
+    "fo fo fo side"
     "alul alul alul side"
-    "footer footer footer footer"
+    "lab lab lab lab"
 }
+
 header{
     display: flex;
-    grid-area: header;
+    width: 100%;
+    grid-area: fej;
     margin-inline: 0;
     height: 120px;
     background-color: red;
@@ -30,7 +32,7 @@ main{
     width: 95%;
     height: 40rem;
     display: flex;
-    grid-area: main;
+    grid-area: fo;
     flex-direction: row;
     justify-content: space-evenly;
     margin-inline: 2vw;
@@ -66,10 +68,11 @@ img{
 }
 footer{
     margin-top: 1rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     row-gap: 3rem;
-    grid-area: footer;
+    grid-area: lab;
     gap: 1.3rem;
     height: 70px;
     background-color: rgb(68, 68, 68);
@@ -82,8 +85,8 @@ footer{
 }
 aside {
     position: relative;
-    right: -3rem;
-    width: 87%;
+    right: -8rem;
+    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 1.3rem;

@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/mellekoldal.css">
-    <title>Varga Zsombor - Weblap</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Karácsonyi weblap</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/zsombor.css">
 </head>
+
 <body>
     <header>
-        <h1>Karácsonyi Történetek</h1>
+        <h1>Kapcsolat</h1>
+        <nav>
+            <ul>
+                <li><a href="index_1.html">Főoldal</a></li>
+                <li><a href="zalan.html">Zalán</a></li>
+                <li><a href="ricsi.html">Ricsi</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <div class="main_flex szoveg">
-            <p></p>
-        </div>
-        <div class="main_flex bg2">
-            <p></p>
-        </div>
-    </main>
 
-    <aside>
-        <div>
-            <img src="img/santa_nobg.png" alt="">
+    <section class="content">
+        <div class="main-content">
+            <h2 id="tortenet">A karácsonyi csoda</h2>
+            <div id="story">
+                <p>Még aznap reggel, december 24-én, amikor a hópihe táncolva hullott a földre, Anna úgy érezte, hogy
+                    valami különleges fog történni. A kis faluban, ahol élt, mindenki izgatottan készülődött a
+                    karácsonyra, de ő másképp érezte magát. Valami hiányzott, amit nem tudott megmagyarázni. Az
+                    ajándékok, a fények, a díszek mind megvoltak, de mégsem volt teljes az ünnepi hangulat.</p>
+                <p>Reggel, miközben a karácsonyi reggelit készítette, a konyhából hallatszó kicsi kopogtatásra lett
+                    figyelmes. Ki lehet az ilyen korán? – gondolta, miközben a csésze forró kakaót a konyhapultra tette.
+                    Az ajtóhoz sietett, és kinyitotta.</p>
+                <p>A küszöbön egy kis fehér kutya állt, mintha ő is várt volna valamire. Anna meglepődve nézte, hiszen ő
+                    nem emlékezett rá, hogy valaha is látta volna. A kutya kedvesen nézett rá, és mintha csak azt
+                    mondaná, „tartsd meg, én is téged kereslek”, ugrott fel és próbálta betolni a házba.</p>
+                <p>Anna megengedte neki, hogy belépjen, és a kutya egyenesen a karácsonyfa alá futott. Egy pillanatra
+                    megdermedt, ahogy meglátta, hogy a kutya körül egy apró, fénylő gömb kezdett csillogni. Mintha
+                    valami varázslatos dolog történne, a gömb egyre fényesebbé vált, és hirtelen egy szép kis karácsonyi
+                    angyal alakja formálódott benne. Az angyal kedvesen rámosolygott, és egy halk hangon megszólalt:</p>
+                <p>„A legszebb ajándék a szívedben rejlik. Szeretet, melyet adsz, és amit másokban találsz, az a
+                    legnagyobb kincs.”</p>
+                <p>Anna szíve megtelt melegséggel. Az angyal eltűnt, és a kutya egy örömteli ugatás kíséretében
+                    körbefutotta a szobát. Azóta Anna tudta, hogy ez a karácsony más lesz, mint bármi, amit valaha
+                    átéltek. Nem az ajándékok, hanem az együtt töltött idő, az őszinte nevetés és a szeretet volt, ami
+                    igazán számított.</p>
+                <p>Ez a karácsony csodálatos volt, mert rájött, hogy a legnagyobb ajándék, amit adhatunk, az nem más,
+                    mint a szívünk. És ez a kis kutya, aki titokban a legszebb karácsonyi ajándéknak bizonyult, örökre a
+                    legszebb emléke maradt.</p>
+            </div>
+            <img src="img/ajandek_tuz.jpg" alt="Karácsonyi Történet" class="responsive-img">
         </div>
-        <div class="fels">
-            <h3>Ajándék Ötletek</h3>
-            <ul>
-                <li>Lego</li>
-                <li>Pulóver</li>
-                <li>Cipő</li>
-                <li>Ajándék Kártya</li>
-                <li>Gumi Kacsa</li>
-                <li>Foci Labda</li>
-            </ul>
-        </div>
-    </aside>
+    </section>
 
-    <article>
-        <div>
-            <p></p>
-        </div>
-    </article>
 
+
+
+
+    <section class="content" id="contact">
+        <div class="main-content">
+            <h2 id="kapcs">Kapcsolatfelvétel</h2>
+            <form class="form_wrap">
+                <div id="name_box">
+                    <label for="name" id="name_label">Név:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div id="email_box">
+                    <label for="email" id="email_label">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div id="message_box">
+                    <label for="message" id="message_label">Üzenet:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" id="send_but" onclick="feedback()">Küldés</button>
+            </form>
+        </div>
+    </section>
     <footer>
-        <div>
-            <a href="index_1.html">
-                <button class="button-19" role="button">Vissza a főoldalra</button>
-            </a>
-        </div>
-        <div>
-            <p>&copy; Zsombor</p>
-        </div>
+        <p>&copy; 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád</p>
     </footer>
+    <script src="js/feedback.js"></script>
 </body>
+
 </html>
