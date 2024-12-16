@@ -46,5 +46,5 @@ app.get('/', (req, res) => {
 
 const port = 80;
 app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port} or ikt.frontier.hu`);
+    console.log(`Server is running on http://localhost:${port} or http://ikt.frontier.hu`);
 });
