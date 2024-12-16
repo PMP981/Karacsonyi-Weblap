@@ -27,7 +27,7 @@ header{
 }
 main{
     margin-top: 2rem;
-    width: 100%;
+    width: 95%;
     height: 40rem;
     display: flex;
     grid-area: main;
@@ -82,8 +82,8 @@ footer{
 }
 aside {
     position: relative;
-    right: -8rem;
-    width: 70%;
+    right: -3rem;
+    width: 87%;
     display: flex;
     flex-direction: column;
     gap: 1.3rem;
@@ -104,7 +104,7 @@ article {
     margin-top: 1rem;
     margin-inline: 2vw;
     padding-inline: 30px;
-    width: 100%;
+    width: 95%;
     gap: 1.3rem;
     display: flex;
     grid-area: alul;
