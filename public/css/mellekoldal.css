@@ -1,0 +1,241 @@
+body{
+    font-size: 1.1rem;
+    overflow-x: hidden;
+    
+    font-family: 'Times New Roman', Times, serif;
+    background-color: darkseagreen;
+    margin: auto;
+    p{
+        text-align: center;
+    }
+    grid-template-areas: 
+    "fej fej fej fej"
+    "fo fo fo side"
+    "fo fo fo side"
+    "alul alul alul side"
+    "lab lab lab lab"
+}
+
+header{
+    display: flex;
+    width: 100%;
+    grid-area: fej;
+    margin-inline: 0;
+    height: 120px;
+    background-color: red;
+    border: 4px black solid;
+    border-bottom-right-radius: 400px;
+    border-bottom-left-radius: 400px;
+}
+main{
+    margin-top: 2rem;
+    width: 95%;
+    height: 40rem;
+    display: flex;
+    grid-area: fo;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-inline: 2vw;
+    padding-inline: 30px;
+    background-color: wheat;
+    border: 4px black solid;
+    border-radius: 3px;
+    border-top-left-radius: 40px;
+}
+.main_flex{
+    border: 3px darkolivegreen solid;
+    width: 32rem;
+    height: 32rem;
+    margin: auto;
+}
+a{
+    margin-inline: auto;
+    text-decoration: none;
+}
+a:hover {
+    transform: scale(103%);
+}
+h1{
+    color: white;
+    filter: drop-shadow(6px 6px 6px black);
+    font-size: 4.2rem;
+    text-align: center;
+    margin: auto    ;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 3rem;
+    grid-area: lab;
+    gap: 1.3rem;
+    height: 70px;
+    background-color: rgb(68, 68, 68);
+    border: 4px black solid;
+
+    div {
+        margin: auto;
+        color: azure;
+    }
+}
+aside {
+    position: relative;
+    right: -8rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    grid-area: side;
+    background-color: rgb(223, 202, 163);
+    height: 62rem;
+    margin-top: 2rem;
+    border: 4px black solid;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    img {
+        width: 92%;
+        height: auto;
+    }
+}
+
+article {
+    margin-top: 1rem;
+    margin-inline: 2vw;
+    padding-inline: 30px;
+    width: 95%;
+    gap: 1.3rem;
+    display: flex;
+    grid-area: alul;
+    background-color: rgb(223, 202, 163);
+    height: 20rem;
+    border: 4px black solid;
+    border-bottom-left-radius: 40px;
+}
+
+.button-19 {
+  appearance: button;
+  background-color: rgb(133, 25, 25);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: rgb(226, 28, 28);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.05);
+  -webkit-filter: brightness(1.05);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.button-19:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+.bg2 {
+    background-image: url(../img/circle-xmas-nobg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    border-radius: 100%;
+    width: 20rem;
+    height: 20rem;
+    border: 0.8rem solid darkgreen;
+}
+.szoveg {
+    width: 50rem;
+    border-radius: 1rem;
+}
+.fels {
+    font-size: 1.8rem;
+    margin: auto 1rem;
+    line-height: 4.5rem;
+    text-indent: 1rem;
+    h3 {
+        font-size: 2.7rem;
+        margin: auto;
+        text-align: center;  
+        font-variant: small-caps;
+        color: rgb(223, 202, 163);
+        background-color: beige;
+        filter: drop-shadow(5px 5px 2px black);        
+    }
+    ul {
+        list-style-type: "🎄";
+    }
+}
+li:nth-child(odd) {
+    background-color: #ffffff44;
+    position: relative;
+    right: 1.2rem;
+    border: 2px solid black;
+    margin-bottom: 2px;
+}
+li:nth-child(even) {
+    background-color: #ffffff80;
+    border: 2px solid black;
+    margin-bottom: 2px;
+}
+.story1 {
+    font-size: 28px;
+    text-align: justify;
+    text-indent: 10px;
+    margin: 20px;
+}
+
+.story2 {
+    text-align: justify;
+    margin: 20px 20px;
+    font-size: 28px;
+    text-indent: 6px;
+}
