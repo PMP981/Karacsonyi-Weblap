@@ -73,7 +73,7 @@ footer {
     padding: 25px;
 }
 
-#kapcs {
+#contact {
     text-align: center;
 }
 
@@ -184,6 +184,12 @@ textarea {
 
 .story{
     font-size: 115%;
+}
+
+.lang_button{
+    float: right;
+    display: flex;
+    flex-direction: row;
 }
 
 @media (min-width: 1600px) {

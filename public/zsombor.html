@@ -18,11 +18,13 @@
                 <li><a href="index.html">Főoldal</a></li>
                 <li><a href="zalan.html">Zalán</a></li>
                 <li><a href="ricsi.html">Ricsi</a></li>
-                <li><a href="#contact">Kapcsolat</a></li>
+                <li><a id="contact" href="#kapcsolat_fel">Kapcsolat</a></li>
             </ul>
         </nav>
-        <button class="language-btn" onclick="changeLanguage('en')">English</button>
-        <button class="language-btn" onclick="changeLanguage('hu')">Magyar</button>
+        <div class="lang_button">
+            <button class="language-btn" onclick="changeLanguage('en')">English</button>
+            <button class="language-btn" onclick="changeLanguage('hu')">Magyar</button>
+        </div>
     </header>
 
 
@@ -31,7 +33,7 @@
         <div class="main-content">
             <h2 class="focim" id="heading">A karácsonyi csoda</h2>
             <div id="story">
-                <p id="content">Szöveg uwu</p>
+                <p id="main_content_text">Szenteste egy kisvárost vastag hótakaró borított. Az utcák ünnepi fények meleg ragyogásában csillogtak, és a levegőt mézeskalács illata lengte be. A város szélén, egy meghitt kis házikóban egy Emma nevű kislány ült az ablaknál, és a csillagos égboltot kémlelte. „Bárcsak láthatnék ma este egy hullócsillagot,” suttogta halkan. A nagypapája, aki a hintaszékében ült, elmosolyodott, és azt mondta: „A karácsonyi hullócsillag különleges. Ha látsz egyet, a kívánságod valóra válhat.” Hirtelen az égbolt felragyogott, és egy fényes csillag suhant végig az égen. Emma boldogan felsóhajtott, és kívánt valamit. Azt kívánta, hogy a családja boldog legyen, és a város minden lakója érezze szívében a karácsony melegét. Másnap reggel Emma nevetésre és énekszóra ébredt. A családja a karácsonyfa körül gyűlt össze, történeteket meséltek, és ajándékokat bontottak ki. Odakint a szomszédok mosolyogva üdvözölték egymást, és úgy tűnt, mintha az egész város egy nagy család lenne. Emma nagypapája rákacsintott, és halkan azt mondta: „A karácsony varázsa azokban a kívánságokban él, amelyeket megfogalmazunk, és abban a kedvességben, amit egymásnak adunk.” Attól a naptól kezdve Emma tudta, hogy a karácsony nemcsak az ajándékokról szól—hanem a szeretetről, az örömről és az együtt töltött időről.</p>
             </div>
             <img src="img/ajandek_tuz.jpg" alt="Karácsonyi Történet" class="responsive-img">
         </div>
@@ -71,12 +73,12 @@
         </div>
     </section>
     <hr>
-    <section class="content" id="contact">
+    <section class="content" id="kapcsolat_fel">
         <div class="main-content">
-            <h2 id="kapcs contact">Kapcsolatfelvétel</h2>
+            <h2 id="contact">Kapcsolat</h2>
             <form class="form_wrap">
                 <div id="name_box">
-                    <label for="name" id="name_label name">Név:</label>
+                    <label for="name" id="name_label">Név:</label>
                     <input type="text" id="name" name="name">
                 </div>
                 <div id="email_box">
@@ -84,7 +86,7 @@
                     <input type="email" id="email" name="email">
                 </div>
                 <div id="message_box">
-                    <label for="message" id="message_label message">Üzenet:</label>
+                    <label for="message" id="message_label">Üzenet:</label>
                     <textarea id="message" name="message"></textarea>
                 </div>
                 <button type="submit" class="send_but" id="button_msg" onclick="feedback()">Küldés</button>
@@ -127,48 +129,48 @@
 
         const translations = {
             en: {
-                h1: "Christmass&#127876;",
-                heading: "A Chritmass miracle",
-                content: "SZÖVEEEEG",
+                h1: "Christmas🎄",
+                heading: "A Chritmas miracle",
+                content: "On Christmas Eve, a small town was covered in a thick blanket of snow. The streets sparkled under the warm glow of holiday lights, and the air was filled with the sweet smell of gingerbread cookies. In a cozy little house at the edge of town, a little girl named Emma sat by the window, gazing up at the night sky. “I wish I could see a shooting star tonight,” she whispered. Her grandfather, sitting in his armchair, smiled and said, “A shooting star on Christmas Eve is special. If you see one, your wish might come true.” Suddenly, the sky shimmered, and a brilliant star shot across the heavens. Emma gasped with delight and made her wish. She wished for her family to be happy and for everyone in the town to feel the warmth of Christmas in their hearts. The next morning, Emma woke up to the sound of laughter and singing. Her family was gathered around the Christmas tree, sharing stories and opening gifts. Outside, neighbors greeted each other with smiles, and the entire town felt like one big family. Emma’s grandfather winked at her and whispered, “The magic of Christmas lives in the wishes we make and the kindness we share.” From that day on, Emma knew that Christmas wasn’t just about gifts—it was about love, joy, and being together.",
                 giftideas: "Giftideas",
                 ajandek1: "Ball",
                 ajandek2: "Book",
                 ajandek3: "Shoe",
                 ajandek4: "Lego",
-                contact: "Contact",
+                contact_fel: "Contact",
                 name: "Name:",
                 message: "Message:",
                 button_msg: "Send",
-                footer_msg: "&copy; 2024 Christmass Website | Made by: Varga Zsombor Csanád"
+                footer_msg: "© 2024 Christmass Website | Made by: Varga Zsombor Csanád"
             },
             hu: {
-                h1: "Karácsony&#127876;",
+                h1: "Karácsony🎄",
                 heading: "A karácsonyi csoda",
-                content: "SZÖVEEEEG",
+                content: "Szenteste egy kisvárost vastag hótakaró borított. Az utcák ünnepi fények meleg ragyogásában csillogtak, és a levegőt mézeskalács illata lengte be. A város szélén, egy meghitt kis házikóban egy Emma nevű kislány ült az ablaknál, és a csillagos égboltot kémlelte. „Bárcsak láthatnék ma este egy hullócsillagot,” suttogta halkan. A nagypapája, aki a hintaszékében ült, elmosolyodott, és azt mondta: „A karácsonyi hullócsillag különleges. Ha látsz egyet, a kívánságod valóra válhat.” Hirtelen az égbolt felragyogott, és egy fényes csillag suhant végig az égen. Emma boldogan felsóhajtott, és kívánt valamit. Azt kívánta, hogy a családja boldog legyen, és a város minden lakója érezze szívében a karácsony melegét. Másnap reggel Emma nevetésre és énekszóra ébredt. A családja a karácsonyfa körül gyűlt össze, történeteket meséltek, és ajándékokat bontottak ki. Odakint a szomszédok mosolyogva üdvözölték egymást, és úgy tűnt, mintha az egész város egy nagy család lenne. Emma nagypapája rákacsintott, és halkan azt mondta: „A karácsony varázsa azokban a kívánságokban él, amelyeket megfogalmazunk, és abban a kedvességben, amit egymásnak adunk.” Attól a naptól kezdve Emma tudta, hogy a karácsony nemcsak az ajándékokról szól—hanem a szeretetről, az örömről és az együtt töltött időről.",
                 giftideas: "Ajándékötletek",
                 ajandek1: "Labda",
                 ajandek2: "Könyv",
                 ajandek3: "Cipő",
                 ajandek4: "Lego",
-                contact: "Kapcsolatfelvétel",
+                contact_fel: "Kapcsolat",
                 name: "Név:",
                 message: "Üzenet:",
                 button_msg: "Küldés",
-                footer_msg: "&copy; 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád"
+                footer_msg: "© 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád"
             }
         };
 
         function changeLanguage(lang) {
             document.getElementById("heading").innerText = translations[lang].heading;
-            document.getElementById("content").innerText = translations[lang].content;
+            document.getElementById("main_content_text").innerText = translations[lang].content;
             document.getElementById("giftideas").innerText = translations[lang].giftideas;
             document.getElementById("ajandek1").innerText = translations[lang].ajandek1;
             document.getElementById("ajandek2").innerText = translations[lang].ajandek2;
             document.getElementById("ajandek3").innerText = translations[lang].ajandek3;
             document.getElementById("ajandek4").innerText = translations[lang].ajandek4;
-            document.getElementById("contact").innerText = translations[lang].contact;
-            document.getElementById("name").innerText = translations[lang].name;
-            document.getElementById("message").innerText = translations[lang].message;
+            document.getElementById("contact").innerText = translations[lang].contact_fel;
+            document.getElementById("name_label").innerText = translations[lang].name;
+            document.getElementById("message_label").innerText = translations[lang].message;
             document.getElementById("button_msg").innerText = translations[lang].button_msg;
             document.getElementById("footer_msg").innerText = translations[lang].footer_msg;
             document.getElementById("h1").innerText = translations[lang].h1;
