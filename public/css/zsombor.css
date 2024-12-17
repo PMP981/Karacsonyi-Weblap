@@ -10,6 +10,7 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    border-bottom: 3px solid black;
 }
 
 nav ul {
@@ -60,6 +61,7 @@ footer {
     max-width: 65%;
     height: auto;
     width: auto;
+    border-radius: 15px;
 }
 
 .focim {
@@ -147,27 +149,41 @@ textarea {
     padding: 25px;
     margin-inline: 15px;
     border-radius: 10px;
+    width: 20%;
+    justify-content: flex-end;
+    gap: 2rem;
 }
 .h2 {
     margin: auto;
 }
 
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 50px 100px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(105%);
 }
 
 .container {
     padding: 2px 16px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
 }
 
 .card_image {
-    width: 30%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card_div {
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+
+.story{
+    font-size: 115%;
 }
 
 @media (min-width: 1600px) {
@@ -204,4 +220,11 @@ textarea {
     #name {
         display: block;
     }
+}
+hr {
+    background-color: #ff4d4d;
+    height: 5px;
+    width: 45%;
+    margin: auto;
+    border-radius: 5px;
 }
