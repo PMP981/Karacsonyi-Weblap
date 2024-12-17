@@ -7,71 +7,75 @@
     <title>Karácsonyi weblap</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/zalan.css">
+    <link rel="stylesheet" href="css/zsombor.css">
 </head>
 
 <body>
     <header>
-        <h1>Karácsony&#127876;</h1>
+        <h1 id="h1">Karácsony&#127876;</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
-                <li><a href="zsombor.html">Zalán</a></li>
+                <li><a href="zsombor.html">Zsombor</a></li>
                 <li><a href="ricsi.html">Ricsi</a></li>
-                <li><a href="#contact">Kapcsolat</a></li>
+                <li><a id="contact" href="#kapcsolat_fel">Kapcsolat</a></li>
             </ul>
         </nav>
+        <div class="lang_button">
+            <button class="language-btn" onclick="changeLanguage('en')">English</button>
+            <button class="language-btn" onclick="changeLanguage('hu')">Magyar</button>
+        </div>
     </header>
 
 
     <section class="content">
         <img class="santa_side" src="img/santa_nobg.png" alt="santa">
         <div class="main-content">
-            <h2 class="focim">A karácsonyi csoda</h2>
+            <h2 class="focim" id="heading">A karácsonyi csoda</h2>
             <div id="story">
-                <p>Még aznap reggel, december 24-én, amikor a hópihe táncolva hullott a földre, Anna úgy érezte, hogy
-                    valami különleges fog történni. A kis faluban, ahol élt, mindenki izgatottan készülődött a
-                    karácsonyra, de ő másképp érezte magát. Valami hiányzott, amit nem tudott megmagyarázni. Az
-                    ajándékok, a fények, a díszek mind megvoltak, de mégsem volt teljes az ünnepi hangulat.</p>
-                <p>Reggel, miközben a karácsonyi reggelit készítette, a konyhából hallatszó kicsi kopogtatásra lett
-                    figyelmes. Ki lehet az ilyen korán? – gondolta, miközben a csésze forró kakaót a konyhapultra tette.
-                    Az ajtóhoz sietett, és kinyitotta.</p>
-                <p>A küszöbön egy kis fehér kutya állt, mintha ő is várt volna valamire. Anna meglepődve nézte, hiszen ő
-                    nem emlékezett rá, hogy valaha is látta volna. A kutya kedvesen nézett rá, és mintha csak azt
-                    mondaná, „tartsd meg, én is téged kereslek”, ugrott fel és próbálta betolni a házba.</p>
-                <p>Anna megengedte neki, hogy belépjen, és a kutya egyenesen a karácsonyfa alá futott. Egy pillanatra
-                    megdermedt, ahogy meglátta, hogy a kutya körül egy apró, fénylő gömb kezdett csillogni. Mintha
-                    valami varázslatos dolog történne, a gömb egyre fényesebbé vált, és hirtelen egy szép kis karácsonyi
-                    angyal alakja formálódott benne. Az angyal kedvesen rámosolygott, és egy halk hangon megszólalt:</p>
-                <p>„A legszebb ajándék a szívedben rejlik. Szeretet, melyet adsz, és amit másokban találsz, az a
-                    legnagyobb kincs.”</p>
-                <p>Anna szíve megtelt melegséggel. Az angyal eltűnt, és a kutya egy örömteli ugatás kíséretében
-                    körbefutotta a szobát. Azóta Anna tudta, hogy ez a karácsony más lesz, mint bármi, amit valaha
-                    átéltek. Nem az ajándékok, hanem az együtt töltött idő, az őszinte nevetés és a szeretet volt, ami
-                    igazán számított.</p>
-                <p>Ez a karácsony csodálatos volt, mert rájött, hogy a legnagyobb ajándék, amit adhatunk, az nem más,
-                    mint a szívünk. És ez a kis kutya, aki titokban a legszebb karácsonyi ajándéknak bizonyult, örökre a
-                    legszebb emléke maradt.</p>
+                <p id="main_content_text">Egy havas karácsony estén a kis Emília lábujjhegyen lopakodott a kandallóhoz, remélve, hogy rajtakapja a Mikulást. A tűz meleg fénye töltötte be a szobát, miközben a karácsonyfa fenyőillata lengte körül a levegőt. Éjfélt ütött az óra, amikor halk csengettyűszót hallott kintről. Hirtelen jeges szél söpört végig a szobán, és megjelent a Mikulás, piros arcával és ajándékokkal teli zsákjával. Mosolyogva egy kis csomagot nyújtott Emíliának, és suttogta: „Boldog karácsonyt, kicsim.” Túl izgatott volt ahhoz, hogy várjon, és kinyitotta – egy fénylő hógömböt talált benne. Amikor megrázta, varázslatosan egy táncoló manókkal és csillogó hópelyhekkel teli világba repítette őket. A Mikulás nevetett, összecsapta a kezét, és visszatértek a hangulatos nappaliba. Mielőtt távozott volna, rákacsintott és így szólt: „Őrizd meg a varázslatot.” Emília figyelte, ahogy a Mikulás eltűnik a kéményben, a szíve csordultig telt csodával.</p>
             </div>
             <img src="img/ajandek_tuz.jpg" alt="Karácsonyi Történet" class="responsive-img">
         </div>
     </section>
-
+    <hr>
     <section class="content">
         <div class="main-content">
-            <h2 class="focim">Ajándékötletek</h2>
-            <div class="card">
-                <img class="card_image" src="img/labda.png" alt="labda" style="width:100%">
-                <div class="container">
-                    <h4><b>Labda</b></h4>
+            <div class="h2">
+                <h2 class="focim" id="giftideas">Ajándékötletek</h2>
+            </div>
+            <div class="card_div">
+                <div class="card">
+                    <img class="card_image" src="img/labda.png" alt="labda">
+                    <div class="container">
+                        <h4 id="ajandek1"><b>Labda</b></h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="img/book.png" alt="labda">
+                    <div class="container">
+                        <h4 id="ajandek2"><b>Könyv</b></h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="img/cipo.png" alt="labda">
+                    <div class="container">
+                        <h4 id="ajandek3"><b>Cipő</b></h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="img/lego.png" alt="labda">
+                    <div class="container">
+                        <h4 id="ajandek4"><b>Lego</b></h4>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="content" id="contact">
+    <hr>
+    <section class="content" id="kapcsolat_fel">
         <div class="main-content">
-            <h2 id="kapcs">Kapcsolatfelvétel</h2>
+            <h2 id="contact">Kapcsolat</h2>
             <form class="form_wrap">
                 <div id="name_box">
                     <label for="name" id="name_label">Név:</label>
@@ -85,12 +89,12 @@
                     <label for="message" id="message_label">Üzenet:</label>
                     <textarea id="message" name="message"></textarea>
                 </div>
-                <button type="submit" id="send_but" onclick="feedback()">Küldés</button>
+                <button type="submit" class="send_but" id="button_msg" onclick="feedback()">Küldés</button>
             </form>
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád</p>
+        <p id="footer_msg">&copy; 2024 Karácsonyi Weboldal | Készítette: Páva Zalán</p>
     </footer>
     <script>
         async function feedback() {
@@ -121,6 +125,55 @@
             } else {
                 alert("There was an error. Please try again.");
             }
+        }
+
+        const translations = {
+            en: {
+                h1: "Christmas🎄",
+                heading: "A Chritmas miracle",
+                content: "One snowy Christmas Eve, little Emilia tiptoed to the fireplace, hoping to catch Santa. The warm glow of the fire filled the room, while the scent of pine from the Christmas tree wafted through the air. The clock struck midnight when she heard a soft jingle outside. Suddenly, an icy wind swept through the room, and Santa appeared, red-faced and with a sack full of presents. Smiling, he handed Emilia a small package and whispered, “Merry Christmas, my dear.” She was too excited to wait, and she opened it—and found a sparkling snow globe inside. When she shook it, it magically transported them into a world of dancing elves and sparkling snowflakes. Santa laughed, clapped his hands, and they returned to the cozy living room. Before he left, he winked at her and said, “Keep the magic.” Emilia watched as Santa Claus disappeared down the chimney, her heart filled with wonder.",
+                giftideas: "Giftideas",
+                ajandek1: "Ball",
+                ajandek2: "Book",
+                ajandek3: "Shoe",
+                ajandek4: "Lego",
+                contact_fel: "Contact",
+                name: "Name:",
+                message: "Message:",
+                button_msg: "Send",
+                footer_msg: "© 2024 Christmass Website | Made by: Páva Zalán"
+            },
+            hu: {
+                h1: "Karácsony🎄",
+                heading: "A karácsonyi csoda",
+                content: "Egy havas karácsony estén a kis Emília lábujjhegyen lopakodott a kandallóhoz, remélve, hogy rajtakapja a Mikulást. A tűz meleg fénye töltötte be a szobát, miközben a karácsonyfa fenyőillata lengte körül a levegőt. Éjfélt ütött az óra, amikor halk csengettyűszót hallott kintről. Hirtelen jeges szél söpört végig a szobán, és megjelent a Mikulás, piros arcával és ajándékokkal teli zsákjával. Mosolyogva egy kis csomagot nyújtott Emíliának, és suttogta: „Boldog karácsonyt, kicsim.” Túl izgatott volt ahhoz, hogy várjon, és kinyitotta – egy fénylő hógömböt talált benne. Amikor megrázta, varázslatosan egy táncoló manókkal és csillogó hópelyhekkel teli világba repítette őket. A Mikulás nevetett, összecsapta a kezét, és visszatértek a hangulatos nappaliba. Mielőtt távozott volna, rákacsintott és így szólt: „Őrizd meg a varázslatot.” Emília figyelte, ahogy a Mikulás eltűnik a kéményben, a szíve csordultig telt csodával.",
+                giftideas: "Ajándékötletek",
+                ajandek1: "Labda",
+                ajandek2: "Könyv",
+                ajandek3: "Cipő",
+                ajandek4: "Lego",
+                contact_fel: "Kapcsolat",
+                name: "Név:",
+                message: "Üzenet:",
+                button_msg: "Küldés",
+                footer_msg: "© 2024 Karácsonyi Weboldal | Készítette: Páva Zalán"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById("heading").innerText = translations[lang].heading;
+            document.getElementById("main_content_text").innerText = translations[lang].content;
+            document.getElementById("giftideas").innerText = translations[lang].giftideas;
+            document.getElementById("ajandek1").innerText = translations[lang].ajandek1;
+            document.getElementById("ajandek2").innerText = translations[lang].ajandek2;
+            document.getElementById("ajandek3").innerText = translations[lang].ajandek3;
+            document.getElementById("ajandek4").innerText = translations[lang].ajandek4;
+            document.getElementById("contact").innerText = translations[lang].contact_fel;
+            document.getElementById("name_label").innerText = translations[lang].name;
+            document.getElementById("message_label").innerText = translations[lang].message;
+            document.getElementById("button_msg").innerText = translations[lang].button_msg;
+            document.getElementById("footer_msg").innerText = translations[lang].footer_msg;
+            document.getElementById("h1").innerText = translations[lang].h1;
         }
     </script>
 </body>
