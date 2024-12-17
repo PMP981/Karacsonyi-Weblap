@@ -7,63 +7,75 @@
     <title>Karácsonyi weblap</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/ricsi.css">
+    <link rel="stylesheet" href="css/zsombor.css">
 </head>
 
 <body>
     <header>
-        <h1>Karácsony&#127876;</h1>
+        <h1 id="h1">Karácsony&#127876;</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
                 <li><a href="zalan.html">Zalán</a></li>
-                <li><a href="zsombor.html">Ricsi</a></li>
-                <li><a href="#contact">Kapcsolat</a></li>
+                <li><a href="zsombor.html">Zsombor</a></li>
+                <li><a id="contact" href="#kapcsolat_fel">Kapcsolat</a></li>
             </ul>
         </nav>
+        <div class="lang_button">
+            <button class="language-btn" onclick="changeLanguage('en')">English</button>
+            <button class="language-btn" onclick="changeLanguage('hu')">Magyar</button>
+        </div>
     </header>
 
 
     <section class="content">
         <img class="santa_side" src="img/santa_nobg.png" alt="santa">
         <div class="main-content">
-            <h2 class="focim">A karácsonyi szokások</h2>
+            <h2 class="focim" id="heading">A karácsonyi csoda</h2>
             <div id="story">
-                <p>Az advent a karácsony előtti várakozás időszaka, amely négy héttel az ünnep előtt kezdődik.
-                    Adventi koszorú: Négy gyertyából álló koszorút készítenek vagy vásárolnak, és minden vasárnap meggyújtanak egy gyertyát, amely az ünnep közeledtét jelzi.
-                    Adventi naptár: Gyerekek és felnőttek is használják; a naptár mögött kis ajándékok, édességek vagy üzenetek rejtőznek minden napra.</p>
-                <p>Magyarországon a karácsony legfontosabb napja. A családok együtt díszítik fel a karácsonyfát, amelyet hagyományosan szaloncukor, gömbdíszek, gyertyák vagy égősorok ékesítenek.
-                    Ajándékozás: Hagyományosan a Jézuska hozza az ajándékokat, amit a családtagok az este folyamán adnak át egymásnak. A kisebb gyerekek izgatottan várják, hogy „megérkezzen” az ajándék.</p>
-                <p>December 25. és 26. - Karácsony és másnapja
-                    Ezek a napok a családi látogatásoké. Az emberek meglátogatják rokonaikat, nagyszülőket vagy barátokat, és közösen töltik az időt.
-                    Az ünnepi asztalon gyakran maradnak a hagyományos ételek, de sok család modern fogásokat is készít.</p>
-                <p>Sok hívő részt vesz az éjféli misén december 24-én, vagy ellátogat egy karácsonyi istentiszteletre.
-                    Az énekek, például a „Csendes éj” és más karácsonyi dalok fontos részei a vallási és családi ünnepeknek.</p>
-                <p>„A legszebb ajándék a szívedben rejlik. Szeretet, melyet adsz, és amit másokban találsz, az a
-                    legnagyobb kincs.”</p>
-                <p>Az otthonokban égősorokkal, gyertyákkal, koszorúkkal és dekorációkkal teremtik meg az ünnepi légkört.
-                    Sok helyen adventi vásárokat tartanak, ahol az emberek kézműves ajándékokat, édességeket, forralt bort vagy mézeskalácsot vásárolhatnak.
-                    A télies időjárás miatt a forró italok, például a forró csoki és a tea is népszerűek.</p>
+                <p id="main_content_text">Az advent a karácsony előtti várakozás időszaka, amely négy héttel az ünnep előtt kezdődik. Adventi koszorú: Négy gyertyából álló koszorút készítenek vagy vásárolnak, és minden vasárnap meggyújtanak egy gyertyát, amely az ünnep közeledtét jelzi. Adventi naptár: Gyerekek és felnőttek is használják; a naptár mögött kis ajándékok, édességek vagy üzenetek rejtőznek minden napra. Magyarországon a karácsony legfontosabb napja. A családok együtt díszítik fel a karácsonyfát, amelyet hagyományosan szaloncukor, gömbdíszek, gyertyák vagy égősorok ékesítenek. Ajándékozás: Hagyományosan a Jézuska hozza az ajándékokat, amit a családtagok az este folyamán adnak át egymásnak. A kisebb gyerekek izgatottan várják, hogy „megérkezzen” az ajándék. December 25. és 26. - Karácsony és másnapja Ezek a napok a családi látogatásoké. Az emberek meglátogatják rokonaikat, nagyszülőket vagy barátokat, és közösen töltik az időt. Az ünnepi asztalon gyakran maradnak a hagyományos ételek, de sok család modern fogásokat is készít. Sok hívő részt vesz az éjféli misén december 24-én, vagy ellátogat egy karácsonyi istentiszteletre. Az énekek, például a „Csendes éj” és más karácsonyi dalok fontos részei a vallási és családi ünnepeknek. „A legszebb ajándék a szívedben rejlik. Szeretet, melyet adsz, és amit másokban találsz, az a legnagyobb kincs.” Az otthonokban égősorokkal, gyertyákkal, koszorúkkal és dekorációkkal teremtik meg az ünnepi légkört. Sok helyen adventi vásárokat tartanak, ahol az emberek kézműves ajándékokat, édességeket, forralt bort vagy mézeskalácsot vásárolhatnak. A télies időjárás miatt a forró italok, például a forró csoki és a tea is népszerűek.</p>
             </div>
-            <img src="img/ajandek_tuz.jpg" alt="Karácsonyi Történet" class="responsive-img">
+            <img src="img/dekor.jpg" alt="Karácsonyi Történet" class="responsive-img">
         </div>
     </section>
-
+    <hr>
     <section class="content">
         <div class="main-content">
-            <h2 class="focim">Ajándékötletek</h2>
-            <div class="card">
-                <img class="card_image" src="img/labda.png" alt="labda" style="width:100%">
-                <div class="container">
-                    <h4><b>Labda</b></h4>
+            <div class="h2">
+                <h2 class="focim" id="giftideas">Ajándékötletek</h2>
+            </div>
+            <div class="card_div">
+                <div class="card">
+                    <img class="card_image" src="img/labda.png" alt="labda">
+                    <div class="container">
+                        <h4 id="ajandek1"><b>Labda</b></h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="img/book.png" alt="labda">
+                    <div class="container">
+                        <h4 id="ajandek2"><b>Könyv</b></h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="img/cipo.png" alt="labda">
+                    <div class="container">
+                        <h4 id="ajandek3"><b>Cipő</b></h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card_image" src="img/lego.png" alt="labda">
+                    <div class="container">
+                        <h4 id="ajandek4"><b>Lego</b></h4>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="content" id="contact">
+    <hr>
+    <section class="content" id="kapcsolat_fel">
         <div class="main-content">
-            <h2 id="kapcs">Kapcsolatfelvétel</h2>
+            <h2 id="contact">Kapcsolat</h2>
             <form class="form_wrap">
                 <div id="name_box">
                     <label for="name" id="name_label">Név:</label>
@@ -77,12 +89,12 @@
                     <label for="message" id="message_label">Üzenet:</label>
                     <textarea id="message" name="message"></textarea>
                 </div>
-                <button type="submit" id="send_but" onclick="feedback()">Küldés</button>
+                <button type="submit" class="send_but" id="button_msg" onclick="feedback()">Küldés</button>
             </form>
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád</p>
+        <p id="footer_msg">&copy; 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád</p>
     </footer>
     <script>
         async function feedback() {
@@ -113,6 +125,55 @@
             } else {
                 alert("There was an error. Please try again.");
             }
+        }
+
+        const translations = {
+            en: {
+                h1: "Christmas🎄",
+                heading: "A Chritmas miracle",
+                content: "Advent is the period of anticipation before Christmas, which begins four weeks before the holiday. Advent wreath: A wreath of four candles is made or purchased, and a candle is lit every Sunday, indicating the approach of the holiday. Advent calendar: Used by both children and adults; behind the calendar are small gifts, sweets or messages hidden for each day. In Hungary, Christmas is the most important day. Families decorate the Christmas tree together, which is traditionally decorated with sugar, baubles, candles or strings of lights. Gift-giving: Traditionally, the little Jesus brings gifts, which family members give to each other during the evening. Younger children eagerly wait for the gifts to “arrive”. December 25 and 26 - Christmas and the day after These are days for family visits. People visit relatives, grandparents or friends and spend time together. Traditional dishes are often left on the holiday table, but many families also prepare modern dishes. Many believers attend the midnight mass on December 24 or attend a Christmas service. Carillons, such as “Silent Night” and other Christmas songs, are an important part of religious and family celebrations. “The most beautiful gift lies in your heart. The love you give and the love you find in others is the greatest treasure.” Homes are lit with lights, candles, wreaths, and decorations to create a festive atmosphere. Many places hold Advent markets, where people can buy handmade gifts, sweets, mulled wine, or gingerbread. Hot drinks, such as hot chocolate and tea, are also popular due to the wintry weather.",
+                giftideas: "Giftideas",
+                ajandek1: "Ball",
+                ajandek2: "Book",
+                ajandek3: "Shoe",
+                ajandek4: "Lego",
+                contact_fel: "Contact",
+                name: "Name:",
+                message: "Message:",
+                button_msg: "Send",
+                footer_msg: "© 2024 Christmass Website | Made by: Varga Zsombor Csanád"
+            },
+            hu: {
+                h1: "Karácsony🎄",
+                heading: "A karácsonyi csoda",
+                content: "Az advent a karácsony előtti várakozás időszaka, amely négy héttel az ünnep előtt kezdődik. Adventi koszorú: Négy gyertyából álló koszorút készítenek vagy vásárolnak, és minden vasárnap meggyújtanak egy gyertyát, amely az ünnep közeledtét jelzi. Adventi naptár: Gyerekek és felnőttek is használják; a naptár mögött kis ajándékok, édességek vagy üzenetek rejtőznek minden napra. Magyarországon a karácsony legfontosabb napja. A családok együtt díszítik fel a karácsonyfát, amelyet hagyományosan szaloncukor, gömbdíszek, gyertyák vagy égősorok ékesítenek. Ajándékozás: Hagyományosan a Jézuska hozza az ajándékokat, amit a családtagok az este folyamán adnak át egymásnak. A kisebb gyerekek izgatottan várják, hogy „megérkezzen” az ajándék. December 25. és 26. - Karácsony és másnapja Ezek a napok a családi látogatásoké. Az emberek meglátogatják rokonaikat, nagyszülőket vagy barátokat, és közösen töltik az időt. Az ünnepi asztalon gyakran maradnak a hagyományos ételek, de sok család modern fogásokat is készít. Sok hívő részt vesz az éjféli misén december 24-én, vagy ellátogat egy karácsonyi istentiszteletre. Az énekek, például a „Csendes éj” és más karácsonyi dalok fontos részei a vallási és családi ünnepeknek. „A legszebb ajándék a szívedben rejlik. Szeretet, melyet adsz, és amit másokban találsz, az a legnagyobb kincs.” Az otthonokban égősorokkal, gyertyákkal, koszorúkkal és dekorációkkal teremtik meg az ünnepi légkört. Sok helyen adventi vásárokat tartanak, ahol az emberek kézműves ajándékokat, édességeket, forralt bort vagy mézeskalácsot vásárolhatnak. A télies időjárás miatt a forró italok, például a forró csoki és a tea is népszerűek.",
+                giftideas: "Ajándékötletek",
+                ajandek1: "Labda",
+                ajandek2: "Könyv",
+                ajandek3: "Cipő",
+                ajandek4: "Lego",
+                contact_fel: "Kapcsolat",
+                name: "Név:",
+                message: "Üzenet:",
+                button_msg: "Küldés",
+                footer_msg: "© 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById("heading").innerText = translations[lang].heading;
+            document.getElementById("main_content_text").innerText = translations[lang].content;
+            document.getElementById("giftideas").innerText = translations[lang].giftideas;
+            document.getElementById("ajandek1").innerText = translations[lang].ajandek1;
+            document.getElementById("ajandek2").innerText = translations[lang].ajandek2;
+            document.getElementById("ajandek3").innerText = translations[lang].ajandek3;
+            document.getElementById("ajandek4").innerText = translations[lang].ajandek4;
+            document.getElementById("contact").innerText = translations[lang].contact_fel;
+            document.getElementById("name_label").innerText = translations[lang].name;
+            document.getElementById("message_label").innerText = translations[lang].message;
+            document.getElementById("button_msg").innerText = translations[lang].button_msg;
+            document.getElementById("footer_msg").innerText = translations[lang].footer_msg;
+            document.getElementById("h1").innerText = translations[lang].h1;
         }
     </script>
 </body>
