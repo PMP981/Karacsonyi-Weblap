@@ -108,7 +108,7 @@ textarea {
     border-radius: 5px;
 }
 
-#send_but {
+.send_but {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -120,7 +120,7 @@ textarea {
     cursor: pointer;
 }
 
-#send_but:hover {
+.send_but:hover {
     background-color: #e43d3d;
 }
 
