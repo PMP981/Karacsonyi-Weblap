@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <h1>Karácsony&#127876;</h1>
+        <h1 id="h1">Karácsony&#127876;</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
@@ -21,37 +21,17 @@
                 <li><a href="#contact">Kapcsolat</a></li>
             </ul>
         </nav>
+        <button class="language-btn" onclick="changeLanguage('en')">English</button>
+        <button class="language-btn" onclick="changeLanguage('hu')">Magyar</button>
     </header>
 
 
     <section class="content">
         <img class="santa_side" src="img/santa_nobg.png" alt="santa">
         <div class="main-content">
-            <h2 class="focim">A karácsonyi csoda</h2>
+            <h2 class="focim" id="heading">A karácsonyi csoda</h2>
             <div id="story">
-                <p>Még aznap reggel, december 24-én, amikor a hópihe táncolva hullott a földre, Anna úgy érezte, hogy
-                    valami különleges fog történni. A kis faluban, ahol élt, mindenki izgatottan készülődött a
-                    karácsonyra, de ő másképp érezte magát. Valami hiányzott, amit nem tudott megmagyarázni. Az
-                    ajándékok, a fények, a díszek mind megvoltak, de mégsem volt teljes az ünnepi hangulat.</p>
-                <p>Reggel, miközben a karácsonyi reggelit készítette, a konyhából hallatszó kicsi kopogtatásra lett
-                    figyelmes. Ki lehet az ilyen korán? – gondolta, miközben a csésze forró kakaót a konyhapultra tette.
-                    Az ajtóhoz sietett, és kinyitotta.</p>
-                <p>A küszöbön egy kis fehér kutya állt, mintha ő is várt volna valamire. Anna meglepődve nézte, hiszen ő
-                    nem emlékezett rá, hogy valaha is látta volna. A kutya kedvesen nézett rá, és mintha csak azt
-                    mondaná, „tartsd meg, én is téged kereslek”, ugrott fel és próbálta betolni a házba.</p>
-                <p>Anna megengedte neki, hogy belépjen, és a kutya egyenesen a karácsonyfa alá futott. Egy pillanatra
-                    megdermedt, ahogy meglátta, hogy a kutya körül egy apró, fénylő gömb kezdett csillogni. Mintha
-                    valami varázslatos dolog történne, a gömb egyre fényesebbé vált, és hirtelen egy szép kis karácsonyi
-                    angyal alakja formálódott benne. Az angyal kedvesen rámosolygott, és egy halk hangon megszólalt:</p>
-                <p>„A legszebb ajándék a szívedben rejlik. Szeretet, melyet adsz, és amit másokban találsz, az a
-                    legnagyobb kincs.”</p>
-                <p>Anna szíve megtelt melegséggel. Az angyal eltűnt, és a kutya egy örömteli ugatás kíséretében
-                    körbefutotta a szobát. Azóta Anna tudta, hogy ez a karácsony más lesz, mint bármi, amit valaha
-                    átéltek. Nem az ajándékok, hanem az együtt töltött idő, az őszinte nevetés és a szeretet volt, ami
-                    igazán számított.</p>
-                <p>Ez a karácsony csodálatos volt, mert rájött, hogy a legnagyobb ajándék, amit adhatunk, az nem más,
-                    mint a szívünk. És ez a kis kutya, aki titokban a legszebb karácsonyi ajándéknak bizonyult, örökre a
-                    legszebb emléke maradt.</p>
+                <p id="content">Szöveg uwu</p>
             </div>
             <img src="img/ajandek_tuz.jpg" alt="Karácsonyi Történet" class="responsive-img">
         </div>
@@ -60,31 +40,31 @@
     <section class="content">
         <div class="main-content">
             <div class="h2">
-                <h2 class="focim">Ajándékötletek</h2>
+                <h2 class="focim" id="giftideas">Ajándékötletek</h2>
             </div>
             <div class="card_div">
                 <div class="card">
                     <img class="card_image" src="img/labda.png" alt="labda">
                     <div class="container">
-                        <h4><b>Labda</b></h4>
+                        <h4 id="ajandek1"><b>Labda</b></h4>
                     </div>
                 </div>
                 <div class="card">
                     <img class="card_image" src="img/book.png" alt="labda">
                     <div class="container">
-                        <h4><b>Könyv</b></h4>
+                        <h4 id="ajandek2"><b>Könyv</b></h4>
                     </div>
                 </div>
                 <div class="card">
                     <img class="card_image" src="img/cipo.png" alt="labda">
                     <div class="container">
-                        <h4><b>Cipő</b></h4>
+                        <h4 id="ajandek3"><b>Cipő</b></h4>
                     </div>
                 </div>
                 <div class="card">
                     <img class="card_image" src="img/lego.png" alt="labda">
                     <div class="container">
-                        <h4><b>Lego</b></h4>
+                        <h4 id="ajandek4"><b>Lego</b></h4>
                     </div>
                 </div>
             </div>
@@ -93,10 +73,10 @@
     <hr>
     <section class="content" id="contact">
         <div class="main-content">
-            <h2 id="kapcs">Kapcsolatfelvétel</h2>
+            <h2 id="kapcs contact">Kapcsolatfelvétel</h2>
             <form class="form_wrap">
                 <div id="name_box">
-                    <label for="name" id="name_label">Név:</label>
+                    <label for="name" id="name_label name">Név:</label>
                     <input type="text" id="name" name="name">
                 </div>
                 <div id="email_box">
@@ -104,15 +84,15 @@
                     <input type="email" id="email" name="email">
                 </div>
                 <div id="message_box">
-                    <label for="message" id="message_label">Üzenet:</label>
+                    <label for="message" id="message_label message">Üzenet:</label>
                     <textarea id="message" name="message"></textarea>
                 </div>
-                <button type="submit" id="send_but" onclick="feedback()">Küldés</button>
+                <button type="submit" id="send_but button_msg" onclick="feedback()">Küldés</button>
             </form>
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád</p>
+        <p id="footer_msg">&copy; 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád</p>
     </footer>
     <script>
         async function feedback() {
@@ -143,6 +123,55 @@
             } else {
                 alert("There was an error. Please try again.");
             }
+        }
+
+        const translations = {
+            en: {
+                h1: "Christmass&#127876;",
+                heading: "A Chritmass miracle",
+                content: "SZÖVEEEEG",
+                giftideas: "Giftideas",
+                ajandek1: "Ball",
+                ajandek2: "Book",
+                ajandek3: "Shoe",
+                ajandek4: "Lego",
+                contact: "Contact",
+                name: "Name:",
+                message: "Message:",
+                button_msg: "Send",
+                footer_msg: "&copy; 2024 Christmass Website | Made by: Varga Zsombor Csanád"
+            },
+            hu: {
+                h1: "Karácsony&#127876;",
+                heading: "A karácsonyi csoda",
+                content: "SZÖVEEEEG",
+                giftideas: "Ajándékötletek",
+                ajandek1: "Labda",
+                ajandek2: "Könyv",
+                ajandek3: "Cipő",
+                ajandek4: "Lego",
+                contact: "Kapcsolatfelvétel",
+                name: "Név:",
+                message: "Üzenet:",
+                button_msg: "Küldés",
+                footer_msg: "&copy; 2024 Karácsonyi Weboldal | Készítette: Varga Zsombor Csanád"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.getElementById("heading").innerText = translations[lang].heading;
+            document.getElementById("content").innerText = translations[lang].content;
+            document.getElementById("giftideas").innerText = translations[lang].giftideas;
+            document.getElementById("ajandek1").innerText = translations[lang].ajandek1;
+            document.getElementById("ajandek2").innerText = translations[lang].ajandek2;
+            document.getElementById("ajandek3").innerText = translations[lang].ajandek3;
+            document.getElementById("ajandek4").innerText = translations[lang].ajandek4;
+            document.getElementById("contact").innerText = translations[lang].contact;
+            document.getElementById("name").innerText = translations[lang].name;
+            document.getElementById("message").innerText = translations[lang].message;
+            document.getElementById("button_msg").innerText = translations[lang].button_msg;
+            document.getElementById("footer_msg").innerText = translations[lang].footer_msg;
+            document.getElementById("h1").innerText = translations[lang].h1;
         }
     </script>
 </body>
